@@ -12,7 +12,7 @@ const client = new Client({ puppeteer: { headless: false }, session: sessionCfg 
 // This object must include WABrowserId, WASecretBundle, WAToken1 and WAToken2.
 
 client.initialize();
-
+ 
 client.on('qr', (qr) => {
     // NOTE: This event will not be fired if a session is specified.
     console.log('QR RECEIVED', qr);
